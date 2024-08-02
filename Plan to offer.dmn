@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_73BDBF37-8810-451E-B06E-0AED57B0F9D4" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_2B0BF4A9-082F-4B75-992A-F47F4EF6E35A" name="Untitled" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_73BDBF37-8810-451E-B06E-0AED57B0F9D4">
+  <dmn:extensionElements/>
+  <dmn:inputData id="_2E12A6C1-430C-496B-8DD0-2C7958116BC9" name="Subscriber">
+    <dmn:extensionElements/>
+    <dmn:variable id="_CF9BEB51-A4AC-49BE-8FA6-EF6CDCC3801E" name="Subscriber"/>
+  </dmn:inputData>
+  <dmn:decision id="_0F83491E-1D04-4921-B67F-40F8087DFFBC" name="Plan to offer">
+    <dmn:extensionElements/>
+    <dmn:variable id="_6E5AA255-FECC-4277-A048-80D41C6171DB" name="Plan to offer"/>
+    <dmn:informationRequirement id="_06CA9B97-25E9-454F-AF3B-A24DC3F8D873">
+      <dmn:requiredInput href="#_2E12A6C1-430C-496B-8DD0-2C7958116BC9"/>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="_19FBD886-087B-4CE9-8FD8-1FB6A3E72ECE" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_3BB48C49-3F98-48E4-A097-EDC68BD0D805">
+        <dmn:inputExpression id="_E6C769D1-33F1-4D36-B6F2-C28672DBEE55">
+          <dmn:text>Plan list</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_534CF11F-CF3D-468E-AC95-E6C74C3A8B70">
+        <dmn:inputExpression id="_2372A52A-F607-4AAD-8000-AA70F7D3862F">
+          <dmn:text>Subscriber</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_DA3360B0-B897-4629-AFD4-02718CF61CD1"/>
+      <dmn:annotation name="annotation-1"/>
+      <dmn:rule id="_43E7FC84-6E69-4BFF-A61B-DC497B2CC355">
+        <dmn:inputEntry id="_3ABDFC58-6548-4422-A2D8-BB58E366DDA0">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_5418E051-E6E8-44FB-AA87-1615DF012372">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_1F69B307-C209-46C9-B259-F65DC6B22B35">
+          <dmn:text/>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_591B7CF2-B189-4696-A560-95044F9EE623" name="DRG">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_19FBD886-087B-4CE9-8FD8-1FB6A3E72ECE">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="dmnshape-drg-_2E12A6C1-430C-496B-8DD0-2C7958116BC9" dmnElementRef="_2E12A6C1-430C-496B-8DD0-2C7958116BC9" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="549" y="390" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_0F83491E-1D04-4921-B67F-40F8087DFFBC" dmnElementRef="_0F83491E-1D04-4921-B67F-40F8087DFFBC" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="613" y="229" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-drg-_06CA9B97-25E9-454F-AF3B-A24DC3F8D873" dmnElementRef="_06CA9B97-25E9-454F-AF3B-A24DC3F8D873">
+        <di:waypoint x="599" y="415"/>
+        <di:waypoint x="663" y="254"/>
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</dmn:definitions>
