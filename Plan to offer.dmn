@@ -5,9 +5,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_CF9BEB51-A4AC-49BE-8FA6-EF6CDCC3801E" name="Subscriber"/>
   </dmn:inputData>
-  <dmn:decision id="_0F83491E-1D04-4921-B67F-40F8087DFFBC" name="Plan to offer">
+  <dmn:decision id="_0F83491E-1D04-4921-B67F-40F8087DFFBC" name="Plan to offer decision">
     <dmn:extensionElements/>
-    <dmn:variable id="_6E5AA255-FECC-4277-A048-80D41C6171DB" name="Plan to offer"/>
+    <dmn:variable id="_6E5AA255-FECC-4277-A048-80D41C6171DB" name="Plan to offer decision"/>
     <dmn:informationRequirement id="_06CA9B97-25E9-454F-AF3B-A24DC3F8D873">
       <dmn:requiredInput href="#_2E12A6C1-430C-496B-8DD0-2C7958116BC9"/>
     </dmn:informationRequirement>
